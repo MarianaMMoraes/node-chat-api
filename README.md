@@ -108,6 +108,13 @@ socket.on('message', (message) => {
 socket.emit('message', 'Olá a todos!');
 ```
 
+## 🔄 Melhorias futuras
+
+Uma versão com integração contínua (CI/CD), incluindo testes automatizados e pipeline com GitHub Actions, está disponível na branch:
+
+👉 ci-cd
+``
+
 ## Observação
 
 O sistema pode ser escalado horizontalmente com múltiplas instâncias e suporte a Redis para sincronização de eventos.
