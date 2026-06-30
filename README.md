@@ -108,12 +108,18 @@ socket.on('message', (message) => {
 socket.emit('message', 'Olá a todos!');
 ```
 
-## 🔄 Melhorias futuras
+## CI/CD
 
-Uma versão com integração contínua (CI/CD), incluindo testes automatizados e pipeline com GitHub Actions, está disponível na branch:
+Este projeto usa GitHub Actions para integração contínua. A cada push na branch `main` o pipeline:
 
-👉 ci-cd
-``
+- faz checkout do código
+- configura o Node.js
+- instala dependências
+- roda os testes com Jest
+- executa o build
+- faz build opcional da imagem Docker
+
+Assim, mudanças no repositório são validadas automaticamente antes de qualquer entrega.
 
 ## Observação
 
