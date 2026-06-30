@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  chat-api:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - PORT=3000
+      - JWT_SECRET=supersecretjwtkey
+    restart: unless-stopped
